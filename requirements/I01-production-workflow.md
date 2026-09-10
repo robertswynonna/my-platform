@@ -232,9 +232,9 @@ You may use this wording directly or revise it to better match what you actually
 
 After merging:
 
-- [ ] Pull Request 2 has been merged.
-- [ ] Local `main` has been updated.
-- [ ] The completed branch has been cleaned up.
+- [x] Pull Request 2 has been merged.
+- [x] Local `main` has been updated.
+- [x] The completed branch has been cleaned up.
 
 ---
 
@@ -311,12 +311,12 @@ Project conventions are documented in:
 ```
 Before committing:
 
-- [ ] The style guide exists at `docs/style-guide.md`.
-- [ ] `docs/.gitkeep` has been removed.
-- [ ] `README.md` accurately describes the current project.
-- [ ] The README link/path to the style guide is correct.
-- [ ] Markdown files have been reviewed for formatting and obvious errors.
-- [ ] Repository state has been inspected before committing.
+- [x] The style guide exists at `docs/style-guide.md`.
+- [x] `docs/.gitkeep` has been removed.
+- [x] `README.md` accurately describes the current project.
+- [x] The README link/path to the style guide is correct.
+- [x] Markdown files have been reviewed for formatting and obvious errors.
+- [x] Repository state has been inspected before committing.
 
 ---
 
@@ -346,10 +346,10 @@ You may use this wording directly or edit it to better describe your actual work
 
 After merging:
 
-- [ ] Reviewed the Markdown files, verified the documented repository paths, and confirmed that the README accurately reflects the current project state.
-- [ ] Pull Request 3 has been merged.
-- [ ] Local `main` has been updated.
-- [ ] The completed branch has been cleaned up.
+- [x] Reviewed the Markdown files, verified the documented repository paths, and confirmed that the README accurately reflects the current project state.
+- [x] Pull Request 3 has been merged.
+- [x] Local `main` has been updated.
+- [x] The completed branch has been cleaned up.
 
 ---
 
