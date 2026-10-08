@@ -36,7 +36,7 @@ WSL adds another environment layer that must be configured and maintained. Windo
 Evidence / verification:
 
 * Local setup documented in `README.md`
-* Project location verified with `pwd`: `/home/________/capstone/________`
+* Project location verified with `pwd`: `/home/ROBERTSWJ23/capstone/my-platform`
 * Git commands executed from the WSL repository
 * Repository location verified to be inside the Linux filesystem
 
@@ -98,7 +98,7 @@ Evidence / verification:
 * GitHub ruleset: `Protect main`
 * Pull requests required before merge
 * Direct push to protected `main` rejected by the repository ruleset
-* Initial project-structure PR: #___
+* Initial project-structure PR: #1
 
 ### Repository Structure and Engineering Conventions
 
@@ -135,7 +135,28 @@ Repository conventions should reduce friction rather than create unnecessary rul
 
 Evidence / verification:
 
-* Project structure introduced through PR #___
+* Project structure introduced through PR #1
 * Engineering style guide: `docs/style-guide.md`
-* Style guide introduced or updated through PR #___
+* Style guide introduced or updated through PR #3
 * Repository structure visible from the project root
+
+### React and TypeScript Frontend Foundation
+
+The public frontend uses React and TypeScript with Vite to provide a maintainable, type-checked foundation for the production platform.
+
+**Why it matters:**
+
+React provides a component-based model for building the interface, while TypeScript catches many errors before runtime. Vite provides a repeatable path from source code to deployable static files that can be verified through CI and hosted through a production platform.
+
+**Tradeoffs / limitations:**
+
+React and TypeScript introduce build tooling, dependency management, and additional project complexity compared with simple HTML and JavaScript. These costs are justified by stronger type checking, reusable components, and a scalable structure for continued development.
+
+**Evidence / verification:**
+
+* Frontend source: `frontend/`
+* Local development: `npm run dev`
+* Lint: `npm run lint`
+* Production build: `npm run build`
+* Production output: `frontend/dist/`
+* Frontend foundation pull request: `#5`
