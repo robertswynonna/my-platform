@@ -3,7 +3,7 @@ function App() {
   return (
     <main>
       <h1>Wyn Roberts</h1>
-        <h2>Senior Capstone Production Platform</h2>
+        <h2>Senior Capstone Production Platform Page Test</h2>
           <p>
             This site will present my software projects, engineering decisions,and production systems.
           </p>
