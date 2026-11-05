@@ -21,7 +21,21 @@ const profile: Profile = {
   photoAlt: 'Photo of Your Name',
 }
 
+type ReportKind = 'bug' | 'feature'
+
+type Report = {
+  id: string
+  text: string
+  kind: ReportKind
+}
+
 function App() {
+  const sampleReport: Report = {
+    id: '1',
+    text: 'Navigation link is broken',
+    kind: 'bug',
+  }
+
   return (
     <main className="page">
       <section className="card">
@@ -38,6 +52,10 @@ function App() {
           )}
         </p>
         <p className="bio">{profile.bio}</p>
+      </section>
+      <section className="report-board">
+        <h2>Bugs & Feature Requests</h2>
+        <p>{sampleReport.text} ({sampleReport.kind})</p>
       </section>
     </main>
   )
