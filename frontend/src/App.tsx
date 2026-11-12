@@ -34,7 +34,20 @@ function App() {
     id: '1',
     text: 'Navigation link is broken',
     kind: 'bug',
-  }
+  };
+
+  const initialReports: Report[] = [
+    {
+      id: '1',
+      text: 'Navigation link is broken',
+      kind: 'bug',
+    },
+    {
+      id: '2',
+      text: 'Add dark mode option',
+      kind: 'feature',
+    },
+  ];
 
   return (
     <main className="page">
@@ -55,7 +68,13 @@ function App() {
       </section>
       <section className="report-board">
         <h2>Bugs & Feature Requests</h2>
-        <p>{sampleReport.text} ({sampleReport.kind})</p>
+        <ul>
+          {initialReports.map((report) => (
+            <li key={report.id}>
+              {report.text} ({report.kind})
+            </li>
+          ))}
+        </ul>
       </section>
     </main>
   )
